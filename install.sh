@@ -27,7 +27,7 @@ mkdir /storage/emulated/0/DCIM/webvideo-downloader
 echo "stty -echo" > run.sh
 echo "cd webvideo-downloader" >> run.sh
 echo "git pull" >> run.sh
-echo "cd.." >> run.sh
+echo "cd .." >> run.sh
 echo "stty echo" >> run.sh
 echo "python webvideo-downloader/downloader/daemon.py" >> run.sh
 echo '完成'
