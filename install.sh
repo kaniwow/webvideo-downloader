@@ -33,3 +33,4 @@ echo "python webvideo-downloader/downloader/daemon.py" >> run.sh
 echo '完成'
 echo '你现在可以直接输入 sh run.py 开启服务啦！'
 echo "安装结束"
+stty echo
