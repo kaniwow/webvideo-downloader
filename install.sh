@@ -29,8 +29,10 @@ echo "cd webvideo-downloader" >> run.sh
 echo "git pull" >> run.sh
 echo "cd .." >> run.sh
 echo "stty echo" >> run.sh
+echo "clear" >> run.sh
+echo "echo 'webvideo-downloader开始运行啦！'" >>run.sh
 echo "python webvideo-downloader/downloader/daemon.py" >> run.sh
 echo '完成'
-echo '你现在可以直接输入 sh run.py 开启服务啦！'
+echo '你现在可以直接输入 sh run.sh 开启服务啦！'
 echo "安装结束"
 stty echo
