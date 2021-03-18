@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/platform-win%20%7C%20linux%20%7C%20osx-brightgreen) ![](https://img.shields.io/badge/python-%3E=%203.5.0-orange)
 
-🚀 视频下载器，用于下载网站中可以在线播放的视频。
+🚀 视频下载器，用于下载网站中可以在线播放的视频，特别添加针对未 root Android 用户的 Termux 可用版本（实际上就是单纯的把下载目录换了一个再加了一个初始化的 shell）
 
 ---
 
