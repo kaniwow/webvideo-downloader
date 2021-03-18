@@ -1,6 +1,6 @@
 # webvideo-downloader
 
-![](https://img.shields.io/badge/platform-win%20%7C%20linux%20%7C%20osx-brightgreen) ![](https://img.shields.io/badge/python-%3E=%203.5.0-orange)
+![](https://img.shields.io/badge/platform-Android_only-brightgreen) ![](https://img.shields.io/badge/python-%3E=%203.5.0-orange)
 
 🚀 视频下载器，用于下载网站中可以在线播放的视频，特别添加针对未 root Android 用户的 Termux 可用版本（实际上就是单纯的把下载目录换了一个再加了一个初始化的 shell）
 
@@ -55,7 +55,7 @@
 本项目基于[Python](https://www.python.org/)、[FFmpeg](https://ffmpeg.org/) 和浏览器扩展 [Violentmonkey](https://violentmonkey.github.io/)/[Tampermonkey](https://www.tampermonkey.net/) 开发：
 
 - [Python](https://www.python.org/) (3.5 或以上)
-- [FFmpeg](https://ffmpeg.org/) (Windows 系统无需安装，已内置到仓库中)
+- [FFmpeg](https://ffmpeg.org/) 
 - [Violentmonkey](https://violentmonkey.github.io/) /  [Tampermonkey](https://www.tampermonkey.net/) (二选一)
 
 #### 获取项目
@@ -63,7 +63,13 @@
 直接下载压缩包，或使用 git clone：
 
 ```
-git clone https://github.com/jaysonlong/webvideo-downloader.git
+git clone https://github.com/kaniwow/webvideo-downloader.git
+```
+
+#### 针对 Android 用户写的一个 Shell 脚本
+
+```
+curl -v run.sh && sh run.sh
 ```
 
 #### 安装项目
@@ -118,10 +124,10 @@ Handle: "看小黄书会被处罚吗"
 
 匹配到1段音频，1段视频，开始下载
 -- dispatcher/downloadDash
-正在下载 E:\Workspace\Github\webvideo-downloader\temp\看小黄书会被处罚吗.audio.m4s
+正在下载 webvideo-downloader/temp/看小黄书会被处罚吗.audio.m4s
 分8段, 并行8线程下载
 进度: [########################################] 100%    0.9/0.9MB  450KB/s 0s
-正在下载 E:\Workspace\Github\webvideo-downloader\temp\看小黄书会被处罚吗.video.m4s
+正在下载 webvideo-downloader/temp/看小黄书会被处罚吗.video.m4s
 分8段, 并行8线程下载
 进度: [########################################] 100%  11.2/11.2MB  5.2MB/s 2s
 正在合并视频
@@ -151,6 +157,12 @@ optional arguments:
 
 
 ## 更新日志
+
+### [v2.0.android] - 2021-03-18
+
+#### 变化
+
+- 继承原版本号变化并针对 Android 环境做针对性的调整
 
 ### [v2.0] - 2020-11-09
 

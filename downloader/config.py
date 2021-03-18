@@ -73,7 +73,7 @@ interactive = getattr(args, 'i')
 tempFilePath = "../temp/"
 
 # 视频文件保存路径
-videoFilePath = "../videos/"
+videoFilePath = "/storage/emulated/0/DCIM/webvideo-downloader/"
 
 # 日志保存路径
 logPath = './logs/'
